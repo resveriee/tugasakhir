@@ -12,7 +12,7 @@ class product extends Model
     protected $fillable = ['name','price','description','image','recommend','count'];
 
     //relasi 1 produk memiliki banyak komenatar
-    public function comments(){ 
+public function comments(){
         return $this->hasMany(comment::class); //relasi ke model comment
     }
 }
